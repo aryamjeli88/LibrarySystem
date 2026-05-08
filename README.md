@@ -1,4 +1,4 @@
-# Library Management System - Phase 3
+# Library Management System
 
 ## Overview
 A web-based library management system built with **PHP (PDO)** and **MySQL**.

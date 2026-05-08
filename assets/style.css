@@ -1,0 +1,33 @@
+/* Color Palette */
+:root {
+    --primary: #6F4E37; /* Brown */
+    --secondary: #D2B48C; /* Tan */
+    --background: #F5F5DC; /* Beige */
+}
+
+body { font-family: 'Segoe UI', sans-serif; background: var(--background); margin: 0; padding: 0; }
+
+/* Responsive Header (Phase 2) */
+header { background: var(--primary); color: white; text-align: center; padding: 20px; font-size: 22px; }
+
+/* Main Container */
+.container { 
+    max-width: 800px; margin: 30px auto; background: white; padding: 30px; 
+    border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+/* Forms (Phase 2 & 4) */
+input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+button { background: var(--primary); color: white; border: none; padding: 12px; border-radius: 4px; cursor: pointer; width: 100%; font-size: 16px; }
+
+/* Table for Desktop, Responsive for Mobile */
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th { background: var(--secondary); color: var(--primary); padding: 12px; }
+td { padding: 10px; border-bottom: 1px solid #eee; text-align: center; }
+
+@media (max-width: 600px) {
+    .container { width: 90%; }
+    table, tr, td { display: block; width: 100%; }
+    th { display: none; }
+    td { text-align: right; padding-left: 50%; position: relative; border-bottom: 1px solid #ddd; }
+}
